@@ -28,11 +28,14 @@ int main() {
       printf("\nYour value in USD is equal to: %.2f", amountBRL);
     }
     else {
-      printf("\n\nValue not recognized, please try again and type [1] or [2]: \n[1] USD to BRL \n[2] BRL to USD\n");
-    }
-    printf("\nDo you want to convert again? (y/n)\n:");
+      printf("\n\nValue not recognized, please try again");}
+    
+    printf("\n\nDo you want to convert again? (y/n)\n:");
     scanf(" %c", &continueYN);
+    if (continueYN != 'y')
+      break;
   }
+  
   printf("\n\nThanks for using the program.");
   return 0;
 }
