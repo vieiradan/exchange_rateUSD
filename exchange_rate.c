@@ -39,4 +39,3 @@ int main() {
   printf("\n\nThanks for using the program.");
   return 0;
 }
-
